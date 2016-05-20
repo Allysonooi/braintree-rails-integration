@@ -1,0 +1,18 @@
+<h1>Welcome</h1>
+<p>This is the Recurring Payment Home page</p>
+
+<form id="checkout" method="post" action="/Rcheckout">
+  <div id="payment-form"></div>
+  <input type="submit" value="Pay Now">
+</form>
+
+<script src="https://js.braintreegateway.com/js/braintree-2.20.0.min.js"></script>
+<script>
+// We generated a client token for you so you can test out this code
+// immediately. In a production-ready integration, you will need to
+// generate a client token on your server (see section below).
+var clientToken = "<%= @token %>";
+braintree.setup(clientToken, "dropin", {
+  container: "payment-form"
+});
+</script>

@@ -3,8 +3,13 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
-
+  root 'static#home'
+  post 'Ocheckout', to: 'checkout#Ocheckout'
+  post 'Rcheckout', to: 'checkout#Rcheckout'
+  post 'rsubscription', to: 'checkout#rsubscription'
+  get 'static/onetime'
+  get 'static/recurring'
+  get 'static/subscription'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
