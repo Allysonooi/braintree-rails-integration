@@ -9,5 +9,3 @@ Things you may want to NOTE:
 * For checkout/rsubscription, the "r" is not capitalised as i do not know how to link to a page with Rsubscription.
 
 * Creating a Plan has to be done in the Braintree Acc rather than in rails.
-
-<tt>rake doc:app</tt>.
