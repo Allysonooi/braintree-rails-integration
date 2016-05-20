@@ -46,3 +46,5 @@ group :development do
 end
 
 gem 'braintree', '~> 2.61.1'
+
+gem 'figaro'
